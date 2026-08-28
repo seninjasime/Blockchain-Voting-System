@@ -1,4 +1,4 @@
-# 🗳️ Blockchain Voting System
+#  Blockchain Voting System
 
 A simple blockchain-based voting application I built to learn and demonstrate how blockchain technology can be used in a voting system.
 
