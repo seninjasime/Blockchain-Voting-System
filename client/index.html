@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>🗳️ Blockchain Voting</h1>
+            <p>Secure • Transparent • Decentralized</p>
+        </div>
+
+
+        <!-- Login Section -->
+        <div id="loginSection" class="card">
+
+            <h2>Voter Login</h2>
+
+            <input
+                type="text"
+                id="loginVoterId"
+                placeholder="Voter ID"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+            >
+
+            <button onclick="login()">Login</button>
+
+            <p id="loginMessage"></p>
+
+            <p class="switch">
+                Don't have an account?
+
+                <button
+                    class="linkButton"
+                    onclick="showRegister()"
+                >
+                    Register
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Register Section -->
+        <div id="registerSection" class="card hidden">
+
+            <h2>Voter Registration</h2>
+
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="text"
+                id="registerVoterId"
+                placeholder="Voter ID"
+            >
+
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Password"
+            >
+
+            <button onclick="register()">Register</button>
+
+            <p id="registerMessage"></p>
+
+            <p class="switch">
+                Already have an account?
+
+                <button
+                    class="linkButton"
+                    onclick="showLogin()"
+                >
+                    Login
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Voting Section -->
+        <div id="votingSection" class="hidden">
+
+            <!-- Welcome -->
+            <div class="welcome">
+                <h2>Welcome to the Election</h2>
+                <p>Select one candidate to cast your vote.</p>
+            </div>
+
+
+            <!-- Admin Panel -->
+            <div
+                id="adminSection"
+                class="admin-section hidden"
+            >
+
+                <h2>Admin Panel</h2>
+
+                <input
+                    type="text"
+                    id="candidateName"
+                    placeholder="Candidate Name"
+                >
+
+                <input
+                    type="text"
+                    id="candidateParty"
+                    placeholder="Party"
+                >
+
+                <input
+                    type="text"
+                    id="candidateSymbol"
+                    placeholder="Symbol / Emoji"
+                >
+
+                <button onclick="addCandidate()">
+                    Add Candidate
+                </button>
+
+                <p id="adminMessage"></p>
+
+            </div>
+
+
+            <!-- Candidates -->
+            <div
+                id="candidatesContainer"
+                class="candidates"
+            >
+                <!-- Candidates will be loaded here -->
+            </div>
+
+
+            <!-- Vote Message -->
+            <p id="voteMessage"></p>
+
+
+            <!-- Election Results -->
+            <div class="results-section">
+
+                <h2>Election Results</h2>
+
+                <div id="resultsContainer">
+                    <!-- Results will appear here -->
+                </div>
+
+                <p id="totalVotes"></p>
+
+            </div>
+
+
+            <!-- Logout -->
+            <button
+                class="logoutButton"
+                onclick="logout()"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

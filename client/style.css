@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+}
+
+.card {
+    background: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.linkButton {
+    width: auto;
+    padding: 0;
+    background: none;
+    color: #2563eb;
+    font-size: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.candidates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.candidate {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.candidate h3 {
+    margin-bottom: 8px;
+}
+
+.candidate p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.candidate button {
+    margin-top: 15px;
+}
+
+.logoutButton {
+    width: 150px;
+    display: block;
+    margin: 30px auto;
+    background: #dc2626;
+}
+
+#loginMessage,
+#registerMessage,
+#voteMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+.results-section {
+    margin-top: 40px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.results-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.result-item {
+    margin-bottom: 20px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.result-bar {
+    width: 100%;
+    height: 18px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.result-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+#totalVotes {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
